@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <RadioButton fx:id="select" layoutX="20.0" layoutY="30.0" mnemonicParsing="false" onAction="#SelectRadio" text="Select/Move" />
+      <RadioButton fx:id="ellipse" layoutX="20.0" layoutY="55.0" mnemonicParsing="false" onAction="#EllipseRadio" text="Ellipse" />
+      <RadioButton fx:id="rectangle" layoutX="20.0" layoutY="80.0" mnemonicParsing="false" onAction="#RectangleRadio" text="Rectangle" />
+      <RadioButton fx:id="line" layoutX="20.0" layoutY="105.0" mnemonicParsing="false" onAction="#LineRadio" text="Line" />
+      <Button fx:id="delete" layoutX="35.0" layoutY="280.0" mnemonicParsing="false" onAction="#DeleteButton" onMouseClicked="#draw" prefWidth="80.0" text="Delete" />
+      <Button fx:id="clone" layoutX="35.0" layoutY="320.0" mnemonicParsing="false" onAction="#CloneButton" prefWidth="80.0" text="Clone" />
+      <ColorPicker fx:id="color" layoutX="20.0" layoutY="200.0" onAction="#changeColor" prefWidth="120.0" />
+      <Pane fx:id="pane2D" layoutX="160.0" onMouseClicked="#draw" prefHeight="500.0" prefWidth="640.0" />
+   </children>
+</Pane>
